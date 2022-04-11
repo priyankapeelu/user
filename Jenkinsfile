@@ -6,11 +6,10 @@ stages {
    //for each commit
    stage('lint checks') {
    steps {
-   sh '''
-     #~/node_modules/jslint/bin/jslint.js server.js
-     echo link check
-   '''
+     script {
+      nodejs.lintChecks()
    }
   }
  } //End of stages
+}
 }
