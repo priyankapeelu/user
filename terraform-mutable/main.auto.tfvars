@@ -1,1 +1,3 @@
-COMPONENT = "cart"
+COMPONENT      = "user"
+APP_PORT       = 8080
+WORKSTATION_IP = "3.95.56.17/32"
